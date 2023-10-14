@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billboard</title>
+    <link href="billboard.css" rel="stylesheet">
+</head>
+<script
+  src="https://kit.fontawesome.com/471de5d1b2.js"
+  crossorigin="anonymous"
+></script>
+<body id="myBody">
+    <header>
+        <nav id="nav"> 
+            <div style="position:relative ;">
+            <input placeholder="Search for charts" style="opacity: 1;"  id="searchContent"
+            />
+            <i class="fa-solid fa-magnifying-glass loupe" style="color:#818282" onclick="searchFunction()"></i></div>
+        </nav>
+        <div class="title">MyBILLBOARD</div>
+    </header>
+    <div class="content">
+    <div class="title" style="font-size: 150px; color:#bef2fb; text-shadow: none; display:flex; flex-direction: row; justify-content: space-around;">
+        HOT 100 CHART
+        
+    </div>
+   <div id="cards" >
+    <div class="overTheCard">
+    <div class="content-card" onclick="showCard(event)">
+        <div class="content-style">
+            <div class="image"style="background-image:  url('https://charts-static.billboard.com/img/2022/07/steve-lacy-d2o-badhabit-l6b-180x180.jpg')" ></div>
+            <div>
+            <div class="description-style">
+                 <div class="rank"> 1</div>
+            <div>
+                 <div class="songTitle">Bad Habit</div>
+                <div class="singer"> Steve Lacy</div></div>
+            </div>
+            <hr/>
+            <br/>
+            <div class="deeper-description-style">
+                <div class="position-style" > 
+                    <div class="position-title">Last Week <br/>Position <br/> </div>
+                    <div class="position">2</div>
+                </div>  <div class="position-style" > 
+                    <div class="position-title">Peak<br/>Position <br/></div>
+                    <div class="position">1</div>
+                </div> 
+                <div class="position-style" > 
+                    <div class="position-title">Weeks On <br/>Chart <br/></div>
+                    <div class="position">14</div>
+                </div> 
+            </div>
+            </div>
+        </div>
+    </div>
+</div>   
+</div>
+<div id="pagination-thingy"> 
+    <button onclick="showPrevious()"><i class="fa-solid fa-angle-left" style="color: #b7c8e6; font-size: 50px;" id="previous"></i></button>
+    <div style="display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap:3px;">
+        <div id="prevPageNumber" class="prevNext" style="display:none">0</div>
+        <div id="pageNumber">1</div>
+        <div id="nextPageNumber" class="prevNext">2</div>
+    </div>
+    <button onclick="showNext()"><i class="fa-solid fa-angle-right" style="color: #b7c8e6; font-size: 50px;" id="next"></i></button>
+</div>
+    </div>
+
+</body>
+<script src="billboard.js"></script>
+</html>

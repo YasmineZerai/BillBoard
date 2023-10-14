@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Bakbak+One&family=Belleza&family=Dela+Gothic+One&family=Limelight&family=Montserrat&family=Poiret+One&display=swap');
+
+
+
+#myBody {
+    background-color: #0E2954;
+    padding: 0px;
+    height:300vh;
+}
+header{
+
+    min-height: 80vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction:column;
+    justify-content: end;
+    background-image: url('https://i.pinimg.com/564x/0a/68/43/0a684305605701ad812ff5927bc3ac5b.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+ 
+}
+.title{
+    font-size: 220px;
+    width:100%;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 20px;
+    color:#f5ebeb;
+    text-shadow: 0px 1px 4px #b7b7b7;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(14, 41, 84, 1));
+}
+.content{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+}
+.content-card{
+    min-width: 400px;
+    padding-right:20px;
+    background-color: #F4F5F6;
+    scale:0.9;
+    position:relative;
+    top:0;left:0;
+    transition:all 1s
+}
+.content-card:hover{
+    scale:1.001;
+}
+.rank{
+    font-size: 80px;
+    font-weight:bold ;
+    font-family: 'Anton', sans-serif;
+    color:#0E2954
+}
+
+hr{
+    width:300px;
+    height:1px;
+    background-color: #0E2954;
+    border: #0E2954;
+}
+.songTitle{
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+   color:#0E2954
+}
+.singer{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color:#0E2954;
+}
+.image{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}
+.position-title{
+    font-size: 25px;
+    font-family: 'Bakbak One', cursive;
+   color:#0E2954;
+   text-align: center;
+   line-height:0.8;
+}
+.position{
+    font-size: 35px;
+    font-family: 'Limelight', cursive;
+    color:#dd9aed;
+    
+}
+.content-style{
+    display:flex; 
+    flex-direction: row;
+     justify-content: start; 
+     align-items: center; 
+     gap:20px;
+}
+.description-style{
+    display:flex;
+     flex-direction: row;
+      justify-content: start; 
+      gap:20px;
+}
+.deeper-description-style{
+    display:flex;  
+    flex-direction: row;
+    justify-content: space-evenly;
+     gap:20px;
+}
+.position-style{
+    display:flex;
+     flex-direction: column;
+      justify-content: center;
+       align-items: center;
+ 
+}
+
+#cards{
+    display:grid;
+    grid-template-columns: auto auto;
+    gap:25px;
+    
+
+}
+#pagination-thingy{
+font-size: 30px;
+height:50px;
+width:max-content;
+display:flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+gap:10px;
+font-family: 'Anton', sans-serif;
+color:#b7c8e6
+}
+#pageNumber{
+    height:50px;
+    width:50px;
+    border: solid 2px #b7c8e6;
+    text-align: center;
+    background-color: #A34C52;
+}
+.prevNext{
+    height:40px;
+    width:40px;
+    border: solid 2px #b7c8e6;
+    text-align: center;
+    background-color: #A34C52;
+    opacity: 0.5;
+}
+button{
+
+    background-color: #0E2954;
+    border:none;
+}
+input{
+    width:400px;
+    height:30px;
+    border-radius: 20px;
+    padding-left: 20px;
+    background-color: #f5e9ff;
+    border: solid #ead1ff 2px;
+    font-size: 18px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    text-align: start;
+
+}
+.loupe{
+    position:relative;
+    right:40px;
+
+}
+nav{
+    position:fixed;
+    top: 0; left:0;
+    width:100vw;
+    height: 70px;
+    background-color: #041b40; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transform: translateY(-70px);
+    transition:all 2s;
+    opacity:0.9;
+}
